@@ -71,6 +71,19 @@
 			img {
 				width: 100%;
 			}
+
+			div { 
+				gap: 0.4rem 0rem;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				padding: 0.4rem 0rem;
+				justify-content: space-around;
+
+				img { 
+					max-width: 24.6%;
+				}
+			}
 		}
 
 		@include breakpoint('<=small') {

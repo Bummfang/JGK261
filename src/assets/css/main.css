@@ -705,14 +705,31 @@ input, select, textarea {
 			width: 100%;
 		}
 
-			.image.main img {
+			.image.main > img {
 				width: 100%;
 			}
+
+			.image.main	div { 
+				gap: 0.4rem 0rem;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				padding: 0.4rem 0rem;
+				justify-content: space-around;
+			}
+
+				.image.main	div img { 
+					max-width: 24.6%;
+				}
 
 		@media screen and (max-width: 736px) {
 
 			.image.main {
 				margin: 2rem 0;
+			}
+
+			.image.main	div img { 
+				max-width: 44.6%;
 			}
 
 		}
@@ -723,6 +740,9 @@ input, select, textarea {
 				margin: 1.5rem 0;
 			}
 
+			.image.main	div img { 
+				max-width: 100%;
+			}
 		}
 
 /* List */
@@ -1557,6 +1577,10 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		#main article#work { 
+			width: 80%;
+		}
+
 			#main article.active {
 				-moz-transform: translateY(0);
 				-webkit-transform: translateY(0);
@@ -1564,6 +1588,8 @@ input, select, textarea {
 				transform: translateY(0);
 				opacity: 1;
 			}
+
+
 
 			#main article .close {
 				display: block;
